@@ -3,7 +3,10 @@
 npm config get msvs_version
 
 ```
-
+or 
+```js
+npm config set msvs_version 2019
+```
 if you face any problem use this command in powershell
 ```js
 Get-Process node | Stop-Process
