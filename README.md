@@ -3,8 +3,15 @@ if you face any problem use this command in powershell
 Get-Process node | Stop-Process
 ```
 
-
-
+```js
+npm install --global --production --vs2015 windows-build-tools
+```
+```js
+npm install --global --production --vs2017 windows-build-tools
+```
+```js
+npm install --global --production --vs2019 windows-build-tools
+```
 \DELL\OneDrive\Desktop\generate-genesis-master\node_modules\x11-hash\build\x11hash.vcxproj]
 npm ERR! C:\Users\DELL\OneDrive\Desktop\generate-genesis-master\node_modules\x11-hash\x11hash.cc(16,45): error C2447: '{': missing function header (old-style formal list?) [C:\Users\DELL\OneDrive\Desktop\generate-genesis-master\node_modules\x11-hash\build\x11hash.vcxproj]
 npm ERR! C:\Users\DELL\OneDrive\Desktop\generate-genesis-master\node_modules\x11-hash\x11hash.cc(36,18): error C2275: 'v8::Object': expected an expression instead of a type [C:\Users\DELL\OneDrive\Desktop\generate-genesis-master\node_modules\x11-hash\build\x11hash.vcxproj]
