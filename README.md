@@ -7,6 +7,14 @@ or
 ```js
 npm config set msvs_version 2019
 ```
+or
+```js
+npm config set msvs_version 2017
+```
+or
+```js
+npm config set msvs_version 2022
+```
 if you face any problem use this command in powershell
 ```js
 Get-Process node | Stop-Process
