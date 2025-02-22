@@ -1,4 +1,4 @@
-if face any problem use this command 
+if you face any problem use this command in powershell
 ```js
 Get-Process node | Stop-Process
 ```
