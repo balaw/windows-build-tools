@@ -1,4 +1,37 @@
+change software profile 
+to your PowerShell profile file ($PROFILE):
 
+powershell
+Copy
+Edit
+```js
+Set-Alias python "C:\Path\To\Python3\python.exe"
+```
+Replace C:\Path\To\Python3\python.exe with the actual path to your Python 3 executable.
+
+To do this:
+
+Open PowerShell and run:
+powershell
+Copy
+Edit
+```js
+notepad $PROFILE
+```
+Add the above line and save the file.
+Restart PowerShell.
+Verify the Fix:
+
+Close and reopen PowerShell, then check the Python version:
+powershell
+Copy
+Edit
+```js
+python --version
+```
+It should now show Python 3.
+
+Let me know if that works for you!
 ```js
 npm config get msvs_version
 
