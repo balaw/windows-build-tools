@@ -1,9 +1,12 @@
-change software profile 
+change software profile from python 2 to 3
 to your PowerShell profile file ($PROFILE):
 
 powershell
 Copy
 Edit
+```js
+Set-Alias python "C:\Python313\python.exe"
+```
 ```js
 Set-Alias python "C:\Path\To\Python3\python.exe"
 ```
