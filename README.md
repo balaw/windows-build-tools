@@ -1,3 +1,98 @@
+
+
+PS C:\Windows\system32> node -v
+v14.17.3
+PS C:\Windows\system32> npm -v
+internal/modules/cjs/loader.js:905
+  throw err;
+  ^
+
+Error: Cannot find module 'node:path'
+Require stack:
+- C:\Users\DELL\AppData\Roaming\npm\node_modules\npm\lib\cli.js
+- C:\Users\DELL\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+←[90m    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)←[39m
+←[90m    at Function.Module._load (internal/modules/cjs/loader.js:746:27)←[39m
+←[90m    at Module.require (internal/modules/cjs/loader.js:974:19)←[39m
+←[90m    at require (internal/modules/cjs/helpers.js:92:18)←[39m
+    at Object.<anonymous> (C:\Users\DELL\AppData\Roaming\npm\node_modules\←[4mnpm←[24m\lib\cli.js:10:18)
+←[90m    at Module._compile (internal/modules/cjs/loader.js:1085:14)←[39m
+←[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)←[39m
+←[90m    at Module.load (internal/modules/cjs/loader.js:950:32)←[39m
+←[90m    at Function.Module._load (internal/modules/cjs/loader.js:790:14)←[39m
+←[90m    at Module.require (internal/modules/cjs/loader.js:974:19)←[39m {
+  code: ←[32m'MODULE_NOT_FOUND'←[39m,
+  requireStack: [
+    ←[32m'C:\\Users\\DELL\\AppData\\Roaming\\npm\\node_modules\\npm\\lib\\cli.js'←[39m,
+    ←[32m'C:\\Users\\DELL\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js'←[39m
+  ]
+}
+PS C:\Windows\system32> npm cache clean --force
+internal/modules/cjs/loader.js:905
+  throw err;
+  ^
+
+Error: Cannot find module 'node:path'
+Require stack:
+- C:\Users\DELL\AppData\Roaming\npm\node_modules\npm\lib\cli.js
+- C:\Users\DELL\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+←[90m    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)←[39m
+←[90m    at Function.Module._load (internal/modules/cjs/loader.js:746:27)←[39m
+←[90m    at Module.require (internal/modules/cjs/loader.js:974:19)←[39m
+←[90m    at require (internal/modules/cjs/helpers.js:92:18)←[39m
+    at Object.<anonymous> (C:\Users\DELL\AppData\Roaming\npm\node_modules\←[4mnpm←[24m\lib\cli.js:10:18)
+←[90m    at Module._compile (internal/modules/cjs/loader.js:1085:14)←[39m
+←[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)←[39m
+←[90m    at Module.load (internal/modules/cjs/loader.js:950:32)←[39m
+←[90m    at Function.Module._load (internal/modules/cjs/loader.js:790:14)←[39m
+←[90m    at Module.require (internal/modules/cjs/loader.js:974:19)←[39m {
+  code: ←[32m'MODULE_NOT_FOUND'←[39m,
+  requireStack: [
+    ←[32m'C:\\Users\\DELL\\AppData\\Roaming\\npm\\node_modules\\npm\\lib\\cli.js'←[39m,
+    ←[32m'C:\\Users\\DELL\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js'←[39m
+  ]
+}
+PS C:\Windows\system32> npm install scrypt --save --legacy-peer-deps
+internal/modules/cjs/loader.js:905
+  throw err;
+  ^
+
+Error: Cannot find module 'node:path'
+Require stack:
+- C:\Users\DELL\AppData\Roaming\npm\node_modules\npm\lib\cli.js
+- C:\Users\DELL\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+←[90m    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)←[39m
+←[90m    at Function.Module._load (internal/modules/cjs/loader.js:746:27)←[39m
+←[90m    at Module.require (internal/modules/cjs/loader.js:974:19)←[39m
+←[90m    at require (internal/modules/cjs/helpers.js:92:18)←[39m
+    at Object.<anonymous> (C:\Users\DELL\AppData\Roaming\npm\node_modules\←[4mnpm←[24m\lib\cli.js:10:18)
+←[90m    at Module._compile (internal/modules/cjs/loader.js:1085:14)←[39m
+←[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)←[39m
+←[90m    at Module.load (internal/modules/cjs/loader.js:950:32)←[39m
+←[90m    at Function.Module._load (internal/modules/cjs/loader.js:790:14)←[39m
+←[90m    at Module.require (internal/modules/cjs/loader.js:974:19)←[39m {
+  code: ←[32m'MODULE_NOT_FOUND'←[39m,
+  requireStack: [
+    ←[32m'C:\\Users\\DELL\\AppData\\Roaming\\npm\\node_modules\\npm\\lib\\cli.js'←[39m,
+    ←[32m'C:\\Users\\DELL\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js'←[39m
+  ]
+}
+PS C:\Windows\system32>
+
+
+
+
+
+if you face any error in nodejs you should be run this 
+```js
+Remove-Item -Recurse -Force C:\Users\DELL\AppData\Roaming\npm
+Remove-Item -Recurse -Force C:\Users\DELL\AppData\Roaming\npm-cache
+Remove-Item -Recurse -Force C:\Users\DELL\.npm
+Remove-Item -Recurse -Force "C:\Program Files\nodejs"
+```
+
+
+
 change software profile from python 2 to 3
 to your PowerShell profile file ($PROFILE):
 
