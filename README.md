@@ -134,13 +134,17 @@ Let me know if that works for you!
 npm config get msvs_version
 
 ```
+or
+```js
+npm config set msvs_version 2015
+```
 or 
 ```js
-npm config set msvs_version 2019
+npm config set msvs_version 2017
 ```
 or
 ```js
-npm config set msvs_version 2017
+npm config set msvs_version 2019
 ```
 or
 ```js
