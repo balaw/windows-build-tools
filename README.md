@@ -83,7 +83,7 @@ PS C:\Windows\system32>
 
 
 
-if you face any error in nodejs you should be run this 
+if you face any error in nodejs you should be run this command in power shell
 ```js
 Remove-Item -Recurse -Force C:\Users\DELL\AppData\Roaming\npm
 Remove-Item -Recurse -Force C:\Users\DELL\AppData\Roaming\npm-cache
